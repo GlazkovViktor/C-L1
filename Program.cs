@@ -58,7 +58,7 @@ else
 Console.WriteLine($"max={max}");*/
 
 /*№2*/
- int a = int.Parse(Console.ReadLine());
+ /*int a = int.Parse(Console.ReadLine());
  int b = int.Parse(Console.ReadLine());
  int c = int.Parse(Console.ReadLine());
  int max = a;
@@ -66,4 +66,12 @@ if (b>a)
     max = b;
 if (c>b)
     max = c;
-Console.WriteLine($"max={max}");
+Console.WriteLine($"max={max}");*/
+
+/*#3*/
+Console.Write("Является ли четным число: ");
+ double a = double.Parse(Console.ReadLine());
+if (a % 2 == 0)
+    Console.WriteLine("ДА");
+else
+    Console.WriteLine("НЕТ");

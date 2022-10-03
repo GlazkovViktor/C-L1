@@ -69,9 +69,18 @@ if (c>b)
 Console.WriteLine($"max={max}");*/
 
 /*#3*/
-Console.Write("Является ли четным число: ");
- double a = double.Parse(Console.ReadLine());
+/*Console.Write("Является ли четным число: ");
+ int a = int.Parse(Console.ReadLine());
 if (a % 2 == 0)
     Console.WriteLine("ДА");
 else
     Console.WriteLine("НЕТ");
+*/
+
+/* #4 */
+ Console.Write("Введите число N: ");
+ int a = int.Parse(Console.ReadLine());
+ int i;
+for (i = 1; i<a+1; i++)
+    if (i % 2 == 0)
+    Console.WriteLine(i);

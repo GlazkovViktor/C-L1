@@ -12,4 +12,10 @@ if (b*b==a)
     Console.WriteLine($" {a} квадрат {b}");
 else
     Console.WriteLine("Нет не является");
+int koren = Convert.ToInt32(Math.Sqrt(a));
+if (koren == b)
+    Console.WriteLine($" {a} квадрат {b}");
+else
+    Console.WriteLine("Нет не является");
+
 

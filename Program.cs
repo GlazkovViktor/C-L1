@@ -47,5 +47,12 @@ while (M!=N+1){
 }*/
 
 /*ДОМАШНЕЕ ЗАДАНИЕ*/
-
-
+ /* №1 */
+ int a = int.Parse(Console.ReadLine());
+ int b = int.Parse(Console.ReadLine());
+ int max;
+if (a>b)
+    max = a;
+else
+    max = b;
+Console.WriteLine($"max={max}");

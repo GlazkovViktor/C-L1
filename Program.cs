@@ -8,8 +8,8 @@ Console.WriteLine("Ваше имя "+name);
 */
 int a = int.Parse(Console.ReadLine());
 int b = int.Parse(Console.ReadLine());
-if (a*b==a)
+if (b*b==a)
     Console.WriteLine($" {a} квадрат {b}");
 else
     Console.WriteLine("Нет не является");
-    
+

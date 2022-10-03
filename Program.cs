@@ -6,7 +6,7 @@ int number = int.Parse(Console.ReadLine());
 Console.WriteLine($"Квадрат {number} равен {number*number}");
 Console.WriteLine("Ваше имя "+name);
 */
-int a = int.Parse(Console.ReadLine());
+/*int a = int.Parse(Console.ReadLine());
 int b = int.Parse(Console.ReadLine());
 if (b*b==a)
     Console.WriteLine($" {a} квадрат {b}");
@@ -16,6 +16,25 @@ int koren = Convert.ToInt32(Math.Sqrt(a));
 if (koren == b)
     Console.WriteLine($" {a} квадрат {b}");
 else
-    Console.WriteLine("Нет не является");
+    Console.WriteLine("Нет не является");*/
+int a = int.Parse(Console.ReadLine());
+if (a == 1)
+    Console.WriteLine("Пн");
+if (a == 2)
+    Console.WriteLine("вт");
+if (a == 3)
+    Console.WriteLine("ср");
+if (a == 4)
+    Console.WriteLine("чт");
+if (a == 5)
+    Console.WriteLine("Пт");
+if (a == 6)
+    Console.WriteLine("ура суббота");
+if (a == 7)
+    Console.WriteLine("вс");
+if (a > 7)
+    Console.WriteLine("ошибка");
+if (a < 1)
+    Console.WriteLine("ошибка");
 
 

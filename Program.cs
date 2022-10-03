@@ -1,4 +1,5 @@
-﻿/*
+﻿
+/*
 Console.Write("Введите имя: ");
 string name = Console.ReadLine();
 Console.Write("Введите число: ");
@@ -17,6 +18,7 @@ if (koren == b)
     Console.WriteLine($" {a} квадрат {b}");
 else
     Console.WriteLine("Нет не является");*/
+    /*
 int a = int.Parse(Console.ReadLine());
 if (a == 1)
     Console.WriteLine("Пн");
@@ -36,5 +38,11 @@ if (a > 7)
     Console.WriteLine("ошибка");
 if (a < 1)
     Console.WriteLine("ошибка");
-
+    */
+int N = int.Parse(Console.ReadLine());
+int M = -N;
+while (M!=N+1){
+    Console.WriteLine(M);
+    M++;
+}
 

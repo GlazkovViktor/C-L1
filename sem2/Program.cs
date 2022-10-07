@@ -28,7 +28,7 @@ int num2 = int.Parse(Console.ReadLine());
 if (num1%num2 == 0) Console.WriteLine("Кратно");
 else Console.WriteLine($"Не крастно, остаток равен {num1%num2}");*/
 
-string s = Console.ReadLine();
+/*string s = Console.ReadLine();
 string[] subs = s.Split(' ');
 int max = 0;
 string MaxWord = subs[0];
@@ -44,4 +44,10 @@ foreach (var sub in subs)
         max = k;
     }
 }
-Console.WriteLine(MaxWord);
+Console.WriteLine(MaxWord);*/
+
+//Домашнее задание к семинару 2
+int num = new Random().Next(100,999);
+Console.WriteLine(num);
+int result = (num/10)-((num/100)*10);
+Console.WriteLine($"Второе число: {result}");

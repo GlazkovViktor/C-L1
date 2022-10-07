@@ -86,4 +86,7 @@ for (i = 1; i<a+1; i++)
     Console.WriteLine(i);*/
 
 //ДОМАШНЕЕ ЗАДАНИЕ 2
-
+int num = new Random().Next(100,999);
+Console.WriteLine(num);
+int result = num/10;
+Console.WriteLine($"Второе число: {result}");

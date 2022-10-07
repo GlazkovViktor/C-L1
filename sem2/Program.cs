@@ -65,9 +65,12 @@ Console.WriteLine("Третьего числа нет");*/
 
 // Задача 3
 
-Console.Write("Является ли день недели под номером: " "выходным?");
+Console.Write("День недели выходной?:");
 int Den = int.Parse(Console.ReadLine());
-if (Den == 6 && Den ==7)
-Console.WriteLine("Да");
-else
-Console.WriteLine("Нет");
+
+if (Den == 6 | Den == 7){
+    Console.WriteLine("Да");
+    
+}
+    else
+    Console.WriteLine("Нет");

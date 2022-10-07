@@ -54,7 +54,11 @@ int result = (num/10)-((num/100)*10);
 Console.WriteLine($"Второе число: {result}");*/
 
 //Задача 2
-int num = new Random().Next(100,999);
+int num = new Random().Next(1,9999);
 string num2 = Convert.ToString(num);
 Console.WriteLine(num);
+int len = num2.Length;
+if (len>=3)
 Console.WriteLine($"Третье число: {num2[2]}");
+else
+Console.WriteLine("Третьего числа нет");

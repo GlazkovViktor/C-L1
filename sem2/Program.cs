@@ -54,11 +54,20 @@ int result = (num/10)-((num/100)*10);
 Console.WriteLine($"Второе число: {result}");*/
 
 //Задача 2
-int num = new Random().Next(1,9999);
+/*int num = new Random().Next(1,9999);
 string num2 = Convert.ToString(num);
 Console.WriteLine(num);
 int len = num2.Length;
 if (len>=3)
 Console.WriteLine($"Третье число: {num2[2]}");
 else
-Console.WriteLine("Третьего числа нет");
+Console.WriteLine("Третьего числа нет");*/
+
+// Задача 3
+
+Console.Write("Является ли день недели под номером: " "выходным?");
+int Den = int.Parse(Console.ReadLine());
+if (Den == 6 && Den ==7)
+Console.WriteLine("Да");
+else
+Console.WriteLine("Нет");

@@ -78,9 +78,12 @@ else
 */
 
 /* #4 */
- Console.Write("Введите число N: ");
+/* Console.Write("Введите число N: ");
  int a = int.Parse(Console.ReadLine());
  int i;
 for (i = 1; i<a+1; i++)
     if (i % 2 == 0)
-    Console.WriteLine(i);
+    Console.WriteLine(i);*/
+
+//ДОМАШНЕЕ ЗАДАНИЕ 2
+

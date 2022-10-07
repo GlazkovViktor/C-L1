@@ -47,7 +47,14 @@ foreach (var sub in subs)
 Console.WriteLine(MaxWord);*/
 
 //Домашнее задание к семинару 2
-int num = new Random().Next(100,999);
+//Задача 1
+/*int num = new Random().Next(100,999);
 Console.WriteLine(num);
 int result = (num/10)-((num/100)*10);
-Console.WriteLine($"Второе число: {result}");
+Console.WriteLine($"Второе число: {result}");*/
+
+//Задача 2
+int num = new Random().Next(100,999);
+string num2 = Convert.ToString(num);
+Console.WriteLine(num);
+Console.WriteLine($"Третье число: {num2[2]}");

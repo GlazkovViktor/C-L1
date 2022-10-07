@@ -74,3 +74,4 @@ if (Den == 6 | Den == 7){
 }
     else
     Console.WriteLine("Нет");
+    

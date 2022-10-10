@@ -130,7 +130,7 @@ string num2 = Convert.ToString(num);
     Console.WriteLine("Не является");*/
 
 //Задача 2
-double dist (int x1, int y1, int x2, int y2, int z1, int z2){
+/*double dist (int x1, int y1, int x2, int y2, int z1, int z2){
         double res = Math.Sqrt(Math.Pow((x2-x1),2)+Math.Pow((y2-y1),2)+Math.Pow((z2-z1),2));
         return res;
     }
@@ -142,3 +142,25 @@ double dist (int x1, int y1, int x2, int y2, int z1, int z2){
     int z2 = int.Parse(Console.ReadLine());
     double otvet = dist(x1,y1,x2,y2,z1,z2);
     Console.WriteLine(otvet);
+    */
+
+    //Задача 3
+
+    int n = int.Parse(Console.ReadLine());
+    
+    double[] arr = new double[n];
+    int len = arr.Length;
+    int k = 0;
+    while (n!=0){
+        
+        double kub = Math.Pow(n,3);
+        arr[k] =  kub;
+        n = n-1;
+        k++;
+        
+        
+    }
+    Console.Write("кубы от 1 до N:");
+    for (len=len-1; len>=0; len--){
+    Console.Write($" {arr[len]};");
+    }

@@ -119,7 +119,7 @@ if (Den == 6 | Den == 7){
     double otvet = dist(x1,y1,x2,y2);
     Console.WriteLine(otvet);*/
 // ДОМАШНЕЕ ЗАДАНИЕ К СЕМИНАРУ 3
-// ЗАДАЧА 1
+// ЗАДАЧА 1, решение не универсальное, но соответсвует условию .
 
 int num = int.Parse(Console.ReadLine());
 //int num = new Random().Next(10000,99999);

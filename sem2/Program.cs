@@ -65,7 +65,7 @@ Console.WriteLine("Третьего числа нет");*/
 
 // Задача 3
 
-Console.Write("День недели выходной?:");
+/*Console.Write("День недели выходной?:");
 int Den = int.Parse(Console.ReadLine());
 
 if (Den == 6 | Den == 7){
@@ -73,5 +73,58 @@ if (Den == 6 | Den == 7){
     
 }
     else
-    Console.WriteLine("Нет");
-    
+    Console.WriteLine("Нет");*/
+
+    //СЕМИНАР 3
+
+   /* void chet(int x, int y)
+    {
+        if (x > 0 && y > 0)
+            Console.WriteLine("Первая четверть");  
+        else if (x > 0 && y < 0)
+            Console.WriteLine("Вторая четверть");
+        else if (x < 0 && y < 0)
+            Console.WriteLine("3 четверть");
+        else 
+            Console.WriteLine("4 четверть");
+    }
+    string chet2 (int x, int y){
+        string name = x>0 && y>0 ? "1 четверть": x>0 && y<0 ? "2 четверть": x<0 && y<0 ? "3 четверть": "4 четверть";
+        return name;
+    }
+    int x = int.Parse(Console.ReadLine());
+    int y = int.Parse(Console.ReadLine());
+    chet(x,y);
+    string otvet = chet2(x,y);
+    Console.WriteLine(otvet);*/
+       
+   /* string chet (int x)
+    {
+        string name = x == 1 ? "x>0 и y>0": x == 2 ? "x>0 и y<0": x == 3 ? "x<0 и y<0": "x<0 и y>0";
+        return name;
+    }
+    int x = int.Parse(Console.ReadLine());
+    chet(x);
+    string otvet = chet(x);
+    Console.WriteLine(otvet);*/
+
+   /* double dist (int x1, int y1, int x2, int y2){
+        double res = Math.Sqrt(Math.Pow((x2-x1),2)+Math.Pow((y2-y1),2));
+        return res;
+    }
+    int x1 = int.Parse(Console.ReadLine());
+    int y1 = int.Parse(Console.ReadLine());
+    int x2 = int.Parse(Console.ReadLine());
+    int y2 = int.Parse(Console.ReadLine());
+    double otvet = dist(x1,y1,x2,y2);
+    Console.WriteLine(otvet);*/
+// ДОМАШНЕЕ ЗАДАНИЕ К СЕМИНАРУ 3
+// ЗАДАЧА 1
+
+int num = int.Parse(Console.ReadLine());
+//int num = new Random().Next(10000,99999);
+string num2 = Convert.ToString(num);
+    if (num2[0]==num2[4] && (num2[1]==num2[3]))
+    Console.WriteLine("Является");
+    else
+    Console.WriteLine("Не является");

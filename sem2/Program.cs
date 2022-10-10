@@ -121,10 +121,24 @@ if (Den == 6 | Den == 7){
 // ДОМАШНЕЕ ЗАДАНИЕ К СЕМИНАРУ 3
 // ЗАДАЧА 1, решение не универсальное, но соответсвует условию .
 
-int num = int.Parse(Console.ReadLine());
+/*int num = int.Parse(Console.ReadLine());
 //int num = new Random().Next(10000,99999);
 string num2 = Convert.ToString(num);
     if (num2[0]==num2[4] && (num2[1]==num2[3]))
     Console.WriteLine("Является");
     else
-    Console.WriteLine("Не является");
+    Console.WriteLine("Не является");*/
+
+//Задача 2
+double dist (int x1, int y1, int x2, int y2, int z1, int z2){
+        double res = Math.Sqrt(Math.Pow((x2-x1),2)+Math.Pow((y2-y1),2)+Math.Pow((z2-z1),2));
+        return res;
+    }
+    int x1 = int.Parse(Console.ReadLine());
+    int y1 = int.Parse(Console.ReadLine());
+    int x2 = int.Parse(Console.ReadLine());
+    int y2 = int.Parse(Console.ReadLine());
+    int z1 = int.Parse(Console.ReadLine());
+    int z2 = int.Parse(Console.ReadLine());
+    double otvet = dist(x1,y1,x2,y2,z1,z2);
+    Console.WriteLine(otvet);*

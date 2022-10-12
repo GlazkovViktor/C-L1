@@ -146,7 +146,7 @@ string num2 = Convert.ToString(num);
 
     //Задача 3
 
-    int n = int.Parse(Console.ReadLine());
+   /* int n = int.Parse(Console.ReadLine());
     
     double[] arr = new double[n];
     int len = arr.Length;
@@ -163,4 +163,119 @@ string num2 = Convert.ToString(num);
     Console.Write("кубы от 1 до N:");
     for (len=len-1; len>=0; len--){
     Console.Write($" {arr[len]};");
+    }*/
+    
+    // семинар 4
+   /* int A = int.Parse(Console.ReadLine());
+    int sum = 0;
+    for (int  i = 0;  i < A+1;  i++)
+    {
+         sum = sum + i;
+        
     }
+    Console.WriteLine($"Сумма равна: {sum}" );*/
+    void Vivod(string[] array){
+         foreach (var i in array)
+    {
+         Console.Write(i+" "); 
+    }
+    }
+    string[] perestanovka(string[] array){
+        for(int i =0; i<array.Length/2; i++){
+            string t = array[i];
+            array[i] = array[array.Length-i-1];
+            array[array.Length-i-1] = t;
+        }
+        return array;
+    }
+   /* int A = int.Parse(Console.ReadLine());
+    string[] name = new string[A];
+    for(int i=0; i < A; i++)
+    { 
+        name[i] = Console.ReadLine();
+    }
+    Vivod(name);
+    perestanovka(name);
+    Console.WriteLine();
+    Vivod(name);*/
+
+    //задача 2 , самое часто повторяющееся число
+    
+   /* int[] CreateMass(int A)
+    {
+    int[] arr = new int[A];
+    for( int i =0; i<A; i++)
+        arr[i] = new Random().Next(0,8);
+        return arr;
+    }
+    void PrintArray(int[] arr){
+        Console.WriteLine(String.Join(" ", arr));
+    }
+    int count(int[] arr){
+        int k = 0;
+        int max = 0;
+        for(int i=0; i<arr.Length; i++){
+            k=0;
+            for(int j = 0; j<arr.Length; j++){
+                if (arr[i] == arr[j])k++;
+            }
+            if (k>max){
+                max = k; 
+            }
+        }
+        return max;
+    }
+    Console.WriteLine("Введите количество элементов: ");
+    int A = int.Parse(Console.ReadLine());
+    int[] array = new int[A];
+    array = CreateMass(A);
+    PrintArray(array);
+    count(array);
+    Console.WriteLine(count(array));*/
+
+    //Задача 3 , сгененировать 12 числе, 6 положительных, 6 отриц. диапоазон от -10 до 10
+
+   /* int[] CreateMass(){
+        int kol = 12; 
+        int[] arr = new int[12];
+        int Posit = 0;
+        int Negat = 0;
+        int Zero = 0;
+        while (Posit != 6 && Negat != 6) {
+        Posit = 0;
+        Negat = 0;
+        Zero = 1;
+            for(int i = 0; i<kol; i++){
+            arr[i] = new Random().Next(-10,10);
+            if (arr[i]>0) Posit++;
+            else if (arr[i]<0) Negat++;
+            else  i--;
+            }   
+        }
+        
+        return arr;
+    }
+    void PrintArray(int[] arr){
+        Console.WriteLine(String.Join(" ", arr));
+    }
+    
+    int[] arr = new int[12];    
+    arr = CreateMass();
+    PrintArray(arr);*/
+
+    //ДОМАШНЕЕ ЗАДАНИЕ СЕМИНАР 4
+    //ЗАДАЧА 1
+  
+             
+    double AB(double A, double B){
+       double step = Math.Pow(A,B);
+    return step;
+    }
+        double A = int.Parse(Console.ReadLine());
+        double B = int.Parse(Console.ReadLine());
+        if (B>=0){
+    double pow = AB(A,B);
+    Console.WriteLine(pow);
+        }
+        if (B<0) Console.WriteLine("Ошибка: степень отриц");
+// немного не понимаю в функциях и для чего она тут нужна, ведь без нее еще короче было бы .?

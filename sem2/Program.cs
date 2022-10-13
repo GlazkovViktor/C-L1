@@ -281,7 +281,7 @@ string num2 = Convert.ToString(num);
 // немного не понимаю в функциях и для чего она тут нужна, ведь без нее еще короче было бы .?*/
 
 //Задача 2 , принимает число и выдет сумму цифр в числе
-  double A = int.Parse(Console.ReadLine());
+ /* double A = int.Parse(Console.ReadLine());
   string array = Convert.ToString(A);
   int[] arr = new int[array.Length];
   for (int i = 0; i<array.Length; i++){
@@ -292,3 +292,38 @@ string num2 = Convert.ToString(num);
     sum1 = sum1+arr[j];
   }
   Console.WriteLine(sum1);
+  */
+
+  //Задача 3 рандомный массив из 8 элементов.итоговый массив содержит в себе суммы цифр числа. В хажагии не быдл сказано какие именно рандомыне числа задаем,
+  // ер универсального решения я не смог придумать к сожалению. Судя по примеру нужно было для числе от 1 до 99
+
+  int[] CreateMass(){
+        int kol = 8; 
+        int[] arr = new int[kol];
+            for(int i = 0; i<kol; i++){
+            arr[i] = new Random().Next(1,99999);
+            } 
+        return arr;
+    }
+    void PrintArray(int[] arr){
+        Console.WriteLine(String.Join(" ", arr));
+    }
+    int[] arr = new int[8];    
+    arr = CreateMass();
+    PrintArray(arr);
+    int sum = 0;
+    int[] NewArr = new int[8];
+    for (int i=0;i<arr.Length;i++){
+        if (arr[i]<=99)
+        sum = arr[i]/10 + arr[i]%10;
+        NewArr[i] = sum;
+        if (arr[i]<=999)
+        sum = arr[i]/100 + (arr[i]%100)/10+arr[i]%10;
+        NewArr[i] = sum;
+        if (arr[i]<=9999)
+        sum = arr[i]/1000 + (arr[i]%1000)/100+(arr[i]%100)/10+arr[i]%10;
+        NewArr[i] = sum;
+        sum = arr[i]/10000 + (arr[i]%10000)/1000+(arr[i]%1000)/100+(arr[i]%100)/10+arr[i]%10;
+        NewArr[i] = sum;
+    }
+    PrintArray(NewArr);

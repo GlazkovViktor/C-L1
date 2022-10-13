@@ -267,7 +267,7 @@ string num2 = Convert.ToString(num);
     //ЗАДАЧА 1
   
              
-    double AB(double A, double B){
+   /* double AB(double A, double B){
        double step = Math.Pow(A,B);
     return step;
     }
@@ -278,4 +278,18 @@ string num2 = Convert.ToString(num);
     Console.WriteLine(pow);
         }
         if (B<0) Console.WriteLine("Ошибка: степень отриц");
-// немного не понимаю в функциях и для чего она тут нужна, ведь без нее еще короче было бы .?
+// немного не понимаю в функциях и для чего она тут нужна, ведь без нее еще короче было бы .?*/
+
+//Задача 2 , принимает число и выдет сумму цифр в числе
+  double A = int.Parse(Console.ReadLine());
+  string array = Convert.ToString(A);
+  int[] arr = new int[array.Length];
+  for (int i = 0; i<array.Length; i++){
+    arr[i] = Convert.ToInt32(array[i].ToString());
+  }
+  int sum1 = 0;
+  int sum2 = 0;
+  for (int j = 0; j<arr.Length; j++){
+    sum1 = sum1+arr[j];
+  }
+  Console.WriteLine(sum1);

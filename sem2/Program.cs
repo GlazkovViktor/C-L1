@@ -288,7 +288,6 @@ string num2 = Convert.ToString(num);
     arr[i] = Convert.ToInt32(array[i].ToString());
   }
   int sum1 = 0;
-  int sum2 = 0;
   for (int j = 0; j<arr.Length; j++){
     sum1 = sum1+arr[j];
   }

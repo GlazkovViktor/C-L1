@@ -336,7 +336,7 @@ string num2 = Convert.ToString(num);
     
     void CreateList(List<int> numb){
         for( int i =0; i<10; i++)
-        numb.Add(new Random().Next(-8,8));
+        numb.Add(new Random().Next(1,22));
         }
     int[] CreateMass(int A)
     {
@@ -399,6 +399,8 @@ string num2 = Convert.ToString(num);
     //PrintArray(nums);
     
    //ДОМАШНЕЕ ЗАДАНИЕ К СЕМИНАРУ 5
+
+   // Задача 1
     /*Console.Write("Введите количство числе в массиве: ");
    int A = int.Parse(Console.ReadLine());
    int[] array = CreateMass(A);
@@ -410,7 +412,8 @@ string num2 = Convert.ToString(num);
     }
     Console.WriteLine(k);
     */
-
+//ЗАДАЧА 2
+/*
     Console.Write("Введите количство числе в массиве: ");
    int A = int.Parse(Console.ReadLine());
    int[] array = CreateMass(A);
@@ -421,4 +424,34 @@ string num2 = Convert.ToString(num);
             k = k + array[i];
     }
     }
-    Console.WriteLine(k);
+    Console.WriteLine(k);*/
+    List<int> num = new List<int>();
+    int[] array = new int[10];
+    array = CreateMass(10);
+    PrintArray(array);
+    num.AddRange(array);
+    Console.Write(" ");
+     foreach (var n in num){
+        Console.Write(n+" ");
+    }
+int max = num.Max();
+int indexMax = num.IndexOf(max);
+int min = num.Min();
+int indexMin = num.IndexOf(min);
+Console.WriteLine(" ");
+Console.WriteLine($"Максимальное значение: {max} ");
+Console.WriteLine($"Индекс макс элемента: {indexMax} ");
+Console.WriteLine($"Минимальное значение:  {min} ");
+Console.WriteLine($"Индекс минимального элемента: {indexMin} ");
+int diff = 0;
+int IndexDiff = 0;
+IndexDiff = indexMax-indexMin;
+diff = max-min;
+Console.WriteLine($"Разница:  {diff} ");
+Console.WriteLine($"Разница индексов:  {IndexDiff} ");
+
+
+   
+
+    
+

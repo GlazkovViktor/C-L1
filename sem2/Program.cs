@@ -399,7 +399,7 @@ string num2 = Convert.ToString(num);
     //PrintArray(nums);
     
    //ДОМАШНЕЕ ЗАДАНИЕ К СЕМИНАРУ 5
-    Console.Write("Введите количство числе в массиве: ");
+    /*Console.Write("Введите количство числе в массиве: ");
    int A = int.Parse(Console.ReadLine());
    int[] array = CreateMass(A);
     PrintArray(array);
@@ -409,4 +409,16 @@ string num2 = Convert.ToString(num);
             k = k+1;}
     }
     Console.WriteLine(k);
-    
+    */
+
+    Console.Write("Введите количство числе в массиве: ");
+   int A = int.Parse(Console.ReadLine());
+   int[] array = CreateMass(A);
+    PrintArray(array);
+    int k = 0;
+    for(int i =0; i<array.Length; i++){
+        if (i%2!=0) {
+            k = k + array[i];
+    }
+    }
+    Console.WriteLine(k);

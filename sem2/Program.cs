@@ -425,6 +425,7 @@ string num2 = Convert.ToString(num);
     }
     }
     Console.WriteLine(k);*/
+    //Задача 3
     List<int> num = new List<int>();
     int[] array = new int[10];
     array = CreateMass(10);

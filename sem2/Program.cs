@@ -174,7 +174,7 @@ string num2 = Convert.ToString(num);
         
     }
     Console.WriteLine($"Сумма равна: {sum}" );*/
-    void Vivod(string[] array){
+  /*  void Vivod(string[] array){
          foreach (var i in array)
     {
          Console.Write(i+" "); 
@@ -201,13 +201,14 @@ string num2 = Convert.ToString(num);
 
     //задача 2 , самое часто повторяющееся число
     
-   /* int[] CreateMass(int A)
+   /*int[] CreateMass(int A)
     {
     int[] arr = new int[A];
     for( int i =0; i<A; i++)
         arr[i] = new Random().Next(0,8);
-        return arr;
-    }
+        return arr;}
+
+    
     void PrintArray(int[] arr){
         Console.WriteLine(String.Join(" ", arr));
     }
@@ -297,7 +298,7 @@ string num2 = Convert.ToString(num);
   //Задача 3 рандомный массив из 8 элементов.итоговый массив содержит в себе суммы цифр числа. В хажагии не быдл сказано какие именно рандомыне числа задаем,
   // ер универсального решения я не смог придумать к сожалению. Судя по примеру нужно было для числе от 1 до 99
 
-  int[] CreateMass(){
+ /*int[] CreateMass(){
         int kol = 8; 
         int[] arr = new int[kol];
             for(int i = 0; i<kol; i++){
@@ -305,9 +306,11 @@ string num2 = Convert.ToString(num);
             } 
         return arr;
     }
+    
     void PrintArray(int[] arr){
         Console.WriteLine(String.Join(" ", arr));
     }
+    /*
     int[] arr = new int[8];    
     arr = CreateMass();
     PrintArray(arr);
@@ -327,3 +330,83 @@ string num2 = Convert.ToString(num);
         NewArr[i] = sum;
     }
     PrintArray(NewArr);
+    */
+
+    //Семинар 5  
+    
+    void CreateList(List<int> numb){
+        for( int i =0; i<10; i++)
+        numb.Add(new Random().Next(-8,8));
+        }
+    int[] CreateMass(int A)
+    {
+    int[] arr = new int[A];
+    for( int i =0; i<A; i++)
+        arr[i] = new Random().Next(100,999);
+        return arr;}
+        void PrintArray(int[] arr){
+        Console.WriteLine(String.Join(" ", arr));
+        Console.WriteLine( );
+    }
+    /*
+    List<int> num = new List<int>();
+    int[] array = new int[10];
+    array = CreateMass(10);
+    PrintArray(array);
+    array.ToList();
+    CreateList(num); 
+    Console.Write(" ");
+     foreach (var n in num){
+        Console.Write(n + " ");
+    }
+    num.AddRange(array);
+
+    foreach (var n in num){
+        Console.Write(n + " ");
+    }
+    */
+    //задача 1 сеимнар, заменить элементы в массиве на противоположные по знаку 
+    /*string[] sbitie(string[] array, int k){
+        for (int i=0;i<k;i++){
+            Console.Write("Введите от: ");
+            int l1 = int.Parse(Console.ReadLine());
+            Console.Write("Введите до: ");
+            int r1 = int.Parse(Console.ReadLine());
+            for (int j=l1; j<r1+1; j++)
+            array[j-1] = ".";
+        }
+        return array;
+    }
+    int[] zamena(int[] array){
+        for (int i=0; i<array.Length; i++)
+        array[i] = -array[i];
+        return array;
+    }*/
+   //int[] array = new int[10];
+    //array = CreateMass(10);
+    //Console.WriteLine("Количество кеглей: ");
+    //int N = int.Parse(Console.ReadLine());
+    //string[] nums = new string[N];
+    //for (int i = 0; i<nums.Length; i++){
+      //  nums[i] = "I";
+
+    //}
+   // PrintArray(nums);
+    //Console.Write("Введите количетсво бросков: ");
+    //int K = int.Parse(Console.ReadLine());
+    //nums = sbitie(nums,K);
+
+    //PrintArray(nums);
+    
+   //ДОМАШНЕЕ ЗАДАНИЕ К СЕМИНАРУ 5
+    Console.Write("Введите количство числе в массиве: ");
+   int A = int.Parse(Console.ReadLine());
+   int[] array = CreateMass(A);
+    PrintArray(array);
+    int k = 0;
+    for(int i =0; i<array.Length; i++){
+        if (array[i]%2==0) {
+            k = k+1;}
+    }
+    Console.WriteLine(k);
+    

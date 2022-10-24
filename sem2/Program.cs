@@ -521,6 +521,28 @@ string perevod(int number, int osn) {
     vvod();
     Console.WriteLine(count);*/
 
+    // Задача 2, найти точку пересечения двух прямых 
+
+    void peres(double x1, double y1, double x2, double y2)
+{
+double x = (y2-y1)/(x1-x2);
+double y = (x2*y1-x1*y2)/(x2-x1);
+if(x1!=x2 ) Console.Write($"Точка пересечения: ({x}; {y})");
+else
+Console.Write(" не пересекаются ");
+}
+
+Console.WriteLine("x1: ");
+int x1 = int.Parse(Console.ReadLine());
+Console.WriteLine("y1: ");
+int y1 = int.Parse(Console.ReadLine());
+Console.WriteLine("x2: ");
+int x2 = int.Parse(Console.ReadLine());
+Console.WriteLine("y2: ");
+int y2 = int.Parse(Console.ReadLine());
+
+peres(x1,y1,x2,y2);
+
 
 
 

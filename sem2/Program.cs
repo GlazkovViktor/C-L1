@@ -426,7 +426,7 @@ string num2 = Convert.ToString(num);
     }
     Console.WriteLine(k);*/
     //Задача 3
-    List<int> num = new List<int>();
+   /* List<int> num = new List<int>();
     int[] array = new int[10];
     array = CreateMass(10);
     PrintArray(array);
@@ -449,7 +449,79 @@ int IndexDiff = 0;
 IndexDiff = indexMax-indexMin;
 diff = max-min;
 Console.WriteLine($"Разница:  {diff} ");
-Console.WriteLine($"Разница индексов:  {IndexDiff} ");
+Console.WriteLine($"Разница индексов:  {IndexDiff} ");*/
+
+//СЕМИНРА 6 
+
+/*int number = int.Parse(Console.ReadLine());
+int osn = 16;
+string number2 = Convert.ToString(number,osn);
+Console.WriteLine(number2);
+Console.WriteLine(perevod(number, osn));
+
+string perevod(int number, int osn) {
+    string res = "";
+    string nums = "0123456789ABCDEF";
+    while (number>0) {
+        int del = number/osn;
+        res = nums[number - del*osn] + res;
+        number = number/osn;
+    }
+    return res;
+    }*/
+    /*  
+    int a = int.Parse(Console.ReadLine());
+    int b = int.Parse(Console.ReadLine());
+    int c = int.Parse(Console.ReadLine());
+    if (a+b>c && a+c>b &&  b+c>a) 
+    Console.WriteLine("ДА");
+    else
+    Console.WriteLine("нет");*/
+
+    /*int n = int.Parse(Console.ReadLine());
+    int first = 0;
+    int second = 1;
+    Console.Write(first+ " " + second + " ");
+    for (int i = 2; i<n; i++){
+        int next = first + second;
+        Console.Write(next + " ");
+        first = second;
+        second = next;
+        }*/
+
+   /* int[,] array = new int[100, 100];
+    int n = array.GetLength(0);
+    void Print()
+    {
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++){
+                if (i==j || i == n - 1- j || i == n/2 || j==n/2)
+                Console.Write("*");
+                else 
+                Console.Write(".");
+            }
+            Console.WriteLine();
+        }
+    }
+    Print();*/
+
+    //ДОМАШНЕЕ ЗАДАНИЕ СЕМИНАР 6 Ввести Н чисел, посчитать сколько >0
+
+   /* int N = int.Parse(Console.ReadLine());
+    int[] array = new int[N];
+    int count = 0;
+    void vvod(){
+        for (int i = 0; i<array.Length; i++){
+        array[i] = int.Parse(Console.ReadLine());
+        if (array[i]>0)
+        count = count+1;
+        }
+    } 
+    vvod();
+    Console.WriteLine(count);*/
+
+
 
 
    

@@ -610,7 +610,7 @@ void FillList(List<List<double>> MyList)
     {
         MyList.Add(new List<double>());
         for (int j = 0; j < 5; j++)
-            MyList[i].Add(Math.Round(new Random().NextDouble() * 5,2));
+            MyList[i].Add(Math.Round(new Random().NextDouble() * 5, 2));
     }
 }
 void PrintList(List<List<double>> MyList)
@@ -623,10 +623,36 @@ void PrintList(List<List<double>> MyList)
     }
 }
 List<List<double>> numbers = new List<List<double>>();
+//FillList(numbers);
+//PrintList(numbers);
+
+//ЗАДАЧА 2, ВВЕСТИ ЧИСЛОю НАЙТИ ЕСТТ ЛИ ТАКОЙ ЭЛЕМЕНТ, 
+//СМОГ РЕШИТЬ ТОЛЬКО ТАК ,ЧЕРЕЗ ПРЕОБРАЗОВАНИЕ В СТРОКУ И ВЫТАСКИВАТЬ ОТ ТУДА НЕ ВЫШЛО 
+
+double swap(List<List<double>> MyList, int j1, int j2)
+{
+    double temp1 = 0;
+    for (int i = 0; i < MyList.Count; i++)
+    {
+        for (int j = 0; j < MyList[i].Count; j++)
+            if (j1 > 5 && j2 > 5)
+            {
+                Console.WriteLine("Нет такого");
+            }
+            else
+            {
+                temp1 = MyList[i][j];
+            }
+    }
+    return temp1;
+}
+
 FillList(numbers);
 PrintList(numbers);
-
-
+int j1 = int.Parse(Console.ReadLine());
+int j2 = int.Parse(Console.ReadLine());
+swap(numbers, j1, j2);
+Console.WriteLine(swap(numbers,j1,j2));
 
 
 

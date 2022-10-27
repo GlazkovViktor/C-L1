@@ -75,49 +75,49 @@ if (Den == 6 | Den == 7){
     else
     Console.WriteLine("Нет");*/
 
-    //СЕМИНАР 3
+//СЕМИНАР 3
 
-   /* void chet(int x, int y)
-    {
-        if (x > 0 && y > 0)
-            Console.WriteLine("Первая четверть");  
-        else if (x > 0 && y < 0)
-            Console.WriteLine("Вторая четверть");
-        else if (x < 0 && y < 0)
-            Console.WriteLine("3 четверть");
-        else 
-            Console.WriteLine("4 четверть");
-    }
-    string chet2 (int x, int y){
-        string name = x>0 && y>0 ? "1 четверть": x>0 && y<0 ? "2 четверть": x<0 && y<0 ? "3 четверть": "4 четверть";
-        return name;
-    }
-    int x = int.Parse(Console.ReadLine());
-    int y = int.Parse(Console.ReadLine());
-    chet(x,y);
-    string otvet = chet2(x,y);
-    Console.WriteLine(otvet);*/
-       
-   /* string chet (int x)
-    {
-        string name = x == 1 ? "x>0 и y>0": x == 2 ? "x>0 и y<0": x == 3 ? "x<0 и y<0": "x<0 и y>0";
-        return name;
-    }
-    int x = int.Parse(Console.ReadLine());
-    chet(x);
-    string otvet = chet(x);
-    Console.WriteLine(otvet);*/
+/* void chet(int x, int y)
+ {
+     if (x > 0 && y > 0)
+         Console.WriteLine("Первая четверть");  
+     else if (x > 0 && y < 0)
+         Console.WriteLine("Вторая четверть");
+     else if (x < 0 && y < 0)
+         Console.WriteLine("3 четверть");
+     else 
+         Console.WriteLine("4 четверть");
+ }
+ string chet2 (int x, int y){
+     string name = x>0 && y>0 ? "1 четверть": x>0 && y<0 ? "2 четверть": x<0 && y<0 ? "3 четверть": "4 четверть";
+     return name;
+ }
+ int x = int.Parse(Console.ReadLine());
+ int y = int.Parse(Console.ReadLine());
+ chet(x,y);
+ string otvet = chet2(x,y);
+ Console.WriteLine(otvet);*/
 
-   /* double dist (int x1, int y1, int x2, int y2){
-        double res = Math.Sqrt(Math.Pow((x2-x1),2)+Math.Pow((y2-y1),2));
-        return res;
-    }
-    int x1 = int.Parse(Console.ReadLine());
-    int y1 = int.Parse(Console.ReadLine());
-    int x2 = int.Parse(Console.ReadLine());
-    int y2 = int.Parse(Console.ReadLine());
-    double otvet = dist(x1,y1,x2,y2);
-    Console.WriteLine(otvet);*/
+/* string chet (int x)
+ {
+     string name = x == 1 ? "x>0 и y>0": x == 2 ? "x>0 и y<0": x == 3 ? "x<0 и y<0": "x<0 и y>0";
+     return name;
+ }
+ int x = int.Parse(Console.ReadLine());
+ chet(x);
+ string otvet = chet(x);
+ Console.WriteLine(otvet);*/
+
+/* double dist (int x1, int y1, int x2, int y2){
+     double res = Math.Sqrt(Math.Pow((x2-x1),2)+Math.Pow((y2-y1),2));
+     return res;
+ }
+ int x1 = int.Parse(Console.ReadLine());
+ int y1 = int.Parse(Console.ReadLine());
+ int x2 = int.Parse(Console.ReadLine());
+ int y2 = int.Parse(Console.ReadLine());
+ double otvet = dist(x1,y1,x2,y2);
+ Console.WriteLine(otvet);*/
 // ДОМАШНЕЕ ЗАДАНИЕ К СЕМИНАРУ 3
 // ЗАДАЧА 1, решение не универсальное, но соответсвует условию .
 
@@ -144,274 +144,277 @@ string num2 = Convert.ToString(num);
     Console.WriteLine(otvet);
     */
 
-    //Задача 3
+//Задача 3
 
-   /* int n = int.Parse(Console.ReadLine());
-    
-    double[] arr = new double[n];
-    int len = arr.Length;
-    int k = 0;
-    while (n!=0){
-        
-        double kub = Math.Pow(n,3);
-        arr[k] =  kub;
-        n = n-1;
-        k++;
-        
-        
-    }
-    Console.Write("кубы от 1 до N:");
-    for (len=len-1; len>=0; len--){
-    Console.Write($" {arr[len]};");
-    }*/
-    
-    // семинар 4
-   /* int A = int.Parse(Console.ReadLine());
-    int sum = 0;
-    for (int  i = 0;  i < A+1;  i++)
-    {
-         sum = sum + i;
-        
-    }
-    Console.WriteLine($"Сумма равна: {sum}" );*/
-  /*  void Vivod(string[] array){
-         foreach (var i in array)
-    {
-         Console.Write(i+" "); 
-    }
-    }
-    string[] perestanovka(string[] array){
-        for(int i =0; i<array.Length/2; i++){
-            string t = array[i];
-            array[i] = array[array.Length-i-1];
-            array[array.Length-i-1] = t;
-        }
-        return array;
-    }
-   /* int A = int.Parse(Console.ReadLine());
-    string[] name = new string[A];
-    for(int i=0; i < A; i++)
-    { 
-        name[i] = Console.ReadLine();
-    }
-    Vivod(name);
-    perestanovka(name);
-    Console.WriteLine();
-    Vivod(name);*/
+/* int n = int.Parse(Console.ReadLine());
 
-    //задача 2 , самое часто повторяющееся число
-    
-   /*int[] CreateMass(int A)
-    {
-    int[] arr = new int[A];
-    for( int i =0; i<A; i++)
-        arr[i] = new Random().Next(0,8);
-        return arr;}
+ double[] arr = new double[n];
+ int len = arr.Length;
+ int k = 0;
+ while (n!=0){
 
-    
-    void PrintArray(int[] arr){
-        Console.WriteLine(String.Join(" ", arr));
-    }
-    int count(int[] arr){
-        int k = 0;
-        int max = 0;
-        for(int i=0; i<arr.Length; i++){
-            k=0;
-            for(int j = 0; j<arr.Length; j++){
-                if (arr[i] == arr[j])k++;
-            }
-            if (k>max){
-                max = k; 
-            }
-        }
-        return max;
-    }
-    Console.WriteLine("Введите количество элементов: ");
-    int A = int.Parse(Console.ReadLine());
-    int[] array = new int[A];
-    array = CreateMass(A);
-    PrintArray(array);
-    count(array);
-    Console.WriteLine(count(array));*/
+     double kub = Math.Pow(n,3);
+     arr[k] =  kub;
+     n = n-1;
+     k++;
 
-    //Задача 3 , сгененировать 12 числе, 6 положительных, 6 отриц. диапоазон от -10 до 10
 
-   /* int[] CreateMass(){
-        int kol = 12; 
-        int[] arr = new int[12];
-        int Posit = 0;
-        int Negat = 0;
-        int Zero = 0;
-        while (Posit != 6 && Negat != 6) {
-        Posit = 0;
-        Negat = 0;
-        Zero = 1;
-            for(int i = 0; i<kol; i++){
-            arr[i] = new Random().Next(-10,10);
-            if (arr[i]>0) Posit++;
-            else if (arr[i]<0) Negat++;
-            else  i--;
-            }   
-        }
-        
-        return arr;
-    }
-    void PrintArray(int[] arr){
-        Console.WriteLine(String.Join(" ", arr));
-    }
-    
-    int[] arr = new int[12];    
-    arr = CreateMass();
-    PrintArray(arr);*/
+ }
+ Console.Write("кубы от 1 до N:");
+ for (len=len-1; len>=0; len--){
+ Console.Write($" {arr[len]};");
+ }*/
 
-    //ДОМАШНЕЕ ЗАДАНИЕ СЕМИНАР 4
-    //ЗАДАЧА 1
-  
-             
-   /* double AB(double A, double B){
-       double step = Math.Pow(A,B);
-    return step;
-    }
-        double A = int.Parse(Console.ReadLine());
-        double B = int.Parse(Console.ReadLine());
-        if (B>=0){
-    double pow = AB(A,B);
-    Console.WriteLine(pow);
-        }
-        if (B<0) Console.WriteLine("Ошибка: степень отриц");
+// семинар 4
+/* int A = int.Parse(Console.ReadLine());
+ int sum = 0;
+ for (int  i = 0;  i < A+1;  i++)
+ {
+      sum = sum + i;
+
+ }
+ Console.WriteLine($"Сумма равна: {sum}" );*/
+/*  void Vivod(string[] array){
+       foreach (var i in array)
+  {
+       Console.Write(i+" "); 
+  }
+  }
+  string[] perestanovka(string[] array){
+      for(int i =0; i<array.Length/2; i++){
+          string t = array[i];
+          array[i] = array[array.Length-i-1];
+          array[array.Length-i-1] = t;
+      }
+      return array;
+  }
+ /* int A = int.Parse(Console.ReadLine());
+  string[] name = new string[A];
+  for(int i=0; i < A; i++)
+  { 
+      name[i] = Console.ReadLine();
+  }
+  Vivod(name);
+  perestanovka(name);
+  Console.WriteLine();
+  Vivod(name);*/
+
+//задача 2 , самое часто повторяющееся число
+
+/*int[] CreateMass(int A)
+ {
+ int[] arr = new int[A];
+ for( int i =0; i<A; i++)
+     arr[i] = new Random().Next(0,8);
+     return arr;}
+
+
+ void PrintArray(int[] arr){
+     Console.WriteLine(String.Join(" ", arr));
+ }
+ int count(int[] arr){
+     int k = 0;
+     int max = 0;
+     for(int i=0; i<arr.Length; i++){
+         k=0;
+         for(int j = 0; j<arr.Length; j++){
+             if (arr[i] == arr[j])k++;
+         }
+         if (k>max){
+             max = k; 
+         }
+     }
+     return max;
+ }
+ Console.WriteLine("Введите количество элементов: ");
+ int A = int.Parse(Console.ReadLine());
+ int[] array = new int[A];
+ array = CreateMass(A);
+ PrintArray(array);
+ count(array);
+ Console.WriteLine(count(array));*/
+
+//Задача 3 , сгененировать 12 числе, 6 положительных, 6 отриц. диапоазон от -10 до 10
+
+/* int[] CreateMass(){
+     int kol = 12; 
+     int[] arr = new int[12];
+     int Posit = 0;
+     int Negat = 0;
+     int Zero = 0;
+     while (Posit != 6 && Negat != 6) {
+     Posit = 0;
+     Negat = 0;
+     Zero = 1;
+         for(int i = 0; i<kol; i++){
+         arr[i] = new Random().Next(-10,10);
+         if (arr[i]>0) Posit++;
+         else if (arr[i]<0) Negat++;
+         else  i--;
+         }   
+     }
+
+     return arr;
+ }
+ void PrintArray(int[] arr){
+     Console.WriteLine(String.Join(" ", arr));
+ }
+
+ int[] arr = new int[12];    
+ arr = CreateMass();
+ PrintArray(arr);*/
+
+//ДОМАШНЕЕ ЗАДАНИЕ СЕМИНАР 4
+//ЗАДАЧА 1
+
+
+/* double AB(double A, double B){
+    double step = Math.Pow(A,B);
+ return step;
+ }
+     double A = int.Parse(Console.ReadLine());
+     double B = int.Parse(Console.ReadLine());
+     if (B>=0){
+ double pow = AB(A,B);
+ Console.WriteLine(pow);
+     }
+     if (B<0) Console.WriteLine("Ошибка: степень отриц");
 // немного не понимаю в функциях и для чего она тут нужна, ведь без нее еще короче было бы .?*/
 
 //Задача 2 , принимает число и выдет сумму цифр в числе
- /* double A = int.Parse(Console.ReadLine());
-  string array = Convert.ToString(A);
-  int[] arr = new int[array.Length];
-  for (int i = 0; i<array.Length; i++){
-    arr[i] = Convert.ToInt32(array[i].ToString());
-  }
-  int sum1 = 0;
-  for (int j = 0; j<arr.Length; j++){
-    sum1 = sum1+arr[j];
-  }
-  Console.WriteLine(sum1);
-  */
+/* double A = int.Parse(Console.ReadLine());
+ string array = Convert.ToString(A);
+ int[] arr = new int[array.Length];
+ for (int i = 0; i<array.Length; i++){
+   arr[i] = Convert.ToInt32(array[i].ToString());
+ }
+ int sum1 = 0;
+ for (int j = 0; j<arr.Length; j++){
+   sum1 = sum1+arr[j];
+ }
+ Console.WriteLine(sum1);
+ */
 
-  //Задача 3 рандомный массив из 8 элементов.итоговый массив содержит в себе суммы цифр числа. В хажагии не быдл сказано какие именно рандомыне числа задаем,
-  // ер универсального решения я не смог придумать к сожалению. Судя по примеру нужно было для числе от 1 до 99
+//Задача 3 рандомный массив из 8 элементов.итоговый массив содержит в себе суммы цифр числа. В хажагии не быдл сказано какие именно рандомыне числа задаем,
+// ер универсального решения я не смог придумать к сожалению. Судя по примеру нужно было для числе от 1 до 99
 
- /*int[] CreateMass(){
-        int kol = 8; 
-        int[] arr = new int[kol];
-            for(int i = 0; i<kol; i++){
-            arr[i] = new Random().Next(1,99999);
-            } 
-        return arr;
-    }
-    
-    void PrintArray(int[] arr){
-        Console.WriteLine(String.Join(" ", arr));
-    }
-    /*
-    int[] arr = new int[8];    
-    arr = CreateMass();
-    PrintArray(arr);
-    int sum = 0;
-    int[] NewArr = new int[8];
-    for (int i=0;i<arr.Length;i++){
-        if (arr[i]<=99)
-        sum = arr[i]/10 + arr[i]%10;
-        NewArr[i] = sum;
-        if (arr[i]<=999)
-        sum = arr[i]/100 + (arr[i]%100)/10+arr[i]%10;
-        NewArr[i] = sum;
-        if (arr[i]<=9999)
-        sum = arr[i]/1000 + (arr[i]%1000)/100+(arr[i]%100)/10+arr[i]%10;
-        NewArr[i] = sum;
-        sum = arr[i]/10000 + (arr[i]%10000)/1000+(arr[i]%1000)/100+(arr[i]%100)/10+arr[i]%10;
-        NewArr[i] = sum;
-    }
-    PrintArray(NewArr);
-    */
+/*int[] CreateMass(){
+       int kol = 8; 
+       int[] arr = new int[kol];
+           for(int i = 0; i<kol; i++){
+           arr[i] = new Random().Next(1,99999);
+           } 
+       return arr;
+   }
 
-    //Семинар 5  
-    
-    void CreateList(List<int> numb){
-        for( int i =0; i<10; i++)
-        numb.Add(new Random().Next(1,22));
-        }
-    int[] CreateMass(int A)
-    {
+   void PrintArray(int[] arr){
+       Console.WriteLine(String.Join(" ", arr));
+   }
+   /*
+   int[] arr = new int[8];    
+   arr = CreateMass();
+   PrintArray(arr);
+   int sum = 0;
+   int[] NewArr = new int[8];
+   for (int i=0;i<arr.Length;i++){
+       if (arr[i]<=99)
+       sum = arr[i]/10 + arr[i]%10;
+       NewArr[i] = sum;
+       if (arr[i]<=999)
+       sum = arr[i]/100 + (arr[i]%100)/10+arr[i]%10;
+       NewArr[i] = sum;
+       if (arr[i]<=9999)
+       sum = arr[i]/1000 + (arr[i]%1000)/100+(arr[i]%100)/10+arr[i]%10;
+       NewArr[i] = sum;
+       sum = arr[i]/10000 + (arr[i]%10000)/1000+(arr[i]%1000)/100+(arr[i]%100)/10+arr[i]%10;
+       NewArr[i] = sum;
+   }
+   PrintArray(NewArr);
+   */
+
+//Семинар 5  
+
+void CreateList(List<int> numb)
+{
+    for (int i = 0; i < 10; i++)
+        numb.Add(new Random().Next(1, 22));
+}
+int[] CreateMass(int A)
+{
     int[] arr = new int[A];
-    for( int i =0; i<A; i++)
-        arr[i] = new Random().Next(100,999);
-        return arr;}
-        void PrintArray(int[] arr){
-        Console.WriteLine(String.Join(" ", arr));
-        Console.WriteLine( );
-    }
-    /*
-    List<int> num = new List<int>();
-    int[] array = new int[10];
-    array = CreateMass(10);
-    PrintArray(array);
-    array.ToList();
-    CreateList(num); 
-    Console.Write(" ");
-     foreach (var n in num){
-        Console.Write(n + " ");
-    }
-    num.AddRange(array);
+    for (int i = 0; i < A; i++)
+        arr[i] = new Random().Next(100, 999);
+    return arr;
+}
+void PrintArray(int[] arr)
+{
+    Console.WriteLine(String.Join(" ", arr));
+    Console.WriteLine();
+}
+/*
+List<int> num = new List<int>();
+int[] array = new int[10];
+array = CreateMass(10);
+PrintArray(array);
+array.ToList();
+CreateList(num); 
+Console.Write(" ");
+ foreach (var n in num){
+    Console.Write(n + " ");
+}
+num.AddRange(array);
 
-    foreach (var n in num){
-        Console.Write(n + " ");
+foreach (var n in num){
+    Console.Write(n + " ");
+}
+*/
+//задача 1 сеимнар, заменить элементы в массиве на противоположные по знаку 
+/*string[] sbitie(string[] array, int k){
+    for (int i=0;i<k;i++){
+        Console.Write("Введите от: ");
+        int l1 = int.Parse(Console.ReadLine());
+        Console.Write("Введите до: ");
+        int r1 = int.Parse(Console.ReadLine());
+        for (int j=l1; j<r1+1; j++)
+        array[j-1] = ".";
     }
-    */
-    //задача 1 сеимнар, заменить элементы в массиве на противоположные по знаку 
-    /*string[] sbitie(string[] array, int k){
-        for (int i=0;i<k;i++){
-            Console.Write("Введите от: ");
-            int l1 = int.Parse(Console.ReadLine());
-            Console.Write("Введите до: ");
-            int r1 = int.Parse(Console.ReadLine());
-            for (int j=l1; j<r1+1; j++)
-            array[j-1] = ".";
-        }
-        return array;
-    }
-    int[] zamena(int[] array){
-        for (int i=0; i<array.Length; i++)
-        array[i] = -array[i];
-        return array;
-    }*/
-   //int[] array = new int[10];
-    //array = CreateMass(10);
-    //Console.WriteLine("Количество кеглей: ");
-    //int N = int.Parse(Console.ReadLine());
-    //string[] nums = new string[N];
-    //for (int i = 0; i<nums.Length; i++){
-      //  nums[i] = "I";
+    return array;
+}
+int[] zamena(int[] array){
+    for (int i=0; i<array.Length; i++)
+    array[i] = -array[i];
+    return array;
+}*/
+//int[] array = new int[10];
+//array = CreateMass(10);
+//Console.WriteLine("Количество кеглей: ");
+//int N = int.Parse(Console.ReadLine());
+//string[] nums = new string[N];
+//for (int i = 0; i<nums.Length; i++){
+//  nums[i] = "I";
 
-    //}
-   // PrintArray(nums);
-    //Console.Write("Введите количетсво бросков: ");
-    //int K = int.Parse(Console.ReadLine());
-    //nums = sbitie(nums,K);
+//}
+// PrintArray(nums);
+//Console.Write("Введите количетсво бросков: ");
+//int K = int.Parse(Console.ReadLine());
+//nums = sbitie(nums,K);
 
-    //PrintArray(nums);
-    
-   //ДОМАШНЕЕ ЗАДАНИЕ К СЕМИНАРУ 5
+//PrintArray(nums);
 
-   // Задача 1
-    /*Console.Write("Введите количство числе в массиве: ");
-   int A = int.Parse(Console.ReadLine());
-   int[] array = CreateMass(A);
-    PrintArray(array);
-    int k = 0;
-    for(int i =0; i<array.Length; i++){
-        if (array[i]%2==0) {
-            k = k+1;}
-    }
-    Console.WriteLine(k);
-    */
+//ДОМАШНЕЕ ЗАДАНИЕ К СЕМИНАРУ 5
+
+// Задача 1
+/*Console.Write("Введите количство числе в массиве: ");
+int A = int.Parse(Console.ReadLine());
+int[] array = CreateMass(A);
+PrintArray(array);
+int k = 0;
+for(int i =0; i<array.Length; i++){
+    if (array[i]%2==0) {
+        k = k+1;}
+}
+Console.WriteLine(k);
+*/
 //ЗАДАЧА 2
 /*
     Console.Write("Введите количство числе в массиве: ");
@@ -425,16 +428,16 @@ string num2 = Convert.ToString(num);
     }
     }
     Console.WriteLine(k);*/
-    //Задача 3
-   /* List<int> num = new List<int>();
-    int[] array = new int[10];
-    array = CreateMass(10);
-    PrintArray(array);
-    num.AddRange(array);
-    Console.Write(" ");
-     foreach (var n in num){
-        Console.Write(n+" ");
-    }
+//Задача 3
+/* List<int> num = new List<int>();
+ int[] array = new int[10];
+ array = CreateMass(10);
+ PrintArray(array);
+ num.AddRange(array);
+ Console.Write(" ");
+  foreach (var n in num){
+     Console.Write(n+" ");
+ }
 int max = num.Max();
 int indexMax = num.IndexOf(max);
 int min = num.Min();
@@ -469,67 +472,67 @@ string perevod(int number, int osn) {
     }
     return res;
     }*/
-    /*  
-    int a = int.Parse(Console.ReadLine());
-    int b = int.Parse(Console.ReadLine());
-    int c = int.Parse(Console.ReadLine());
-    if (a+b>c && a+c>b &&  b+c>a) 
-    Console.WriteLine("ДА");
-    else
-    Console.WriteLine("нет");*/
-
-    /*int n = int.Parse(Console.ReadLine());
-    int first = 0;
-    int second = 1;
-    Console.Write(first+ " " + second + " ");
-    for (int i = 2; i<n; i++){
-        int next = first + second;
-        Console.Write(next + " ");
-        first = second;
-        second = next;
-        }*/
-
-   /* int[,] array = new int[100, 100];
-    int n = array.GetLength(0);
-    void Print()
-    {
-        for (int i = 0; i < array.GetLength(0); i++)
-        {
-            for (int j = 0; j < array.GetLength(1); j++){
-                if (i==j || i == n - 1- j || i == n/2 || j==n/2)
-                Console.Write("*");
-                else 
-                Console.Write(".");
-            }
-            Console.WriteLine();
-        }
-    }
-    Print();*/
-
-    //ДОМАШНЕЕ ЗАДАНИЕ СЕМИНАР 6 Ввести Н чисел, посчитать сколько >0
-
-   /* int N = int.Parse(Console.ReadLine());
-    int[] array = new int[N];
-    int count = 0;
-    void vvod(){
-        for (int i = 0; i<array.Length; i++){
-        array[i] = int.Parse(Console.ReadLine());
-        if (array[i]>0)
-        count = count+1;
-        }
-    } 
-    vvod();
-    Console.WriteLine(count);*/
-
-    // Задача 2, найти точку пересечения двух прямых 
-
-    void peres(double x1, double y1, double x2, double y2)
-{
-double x = (y2-y1)/(x1-x2);
-double y = (x2*y1-x1*y2)/(x2-x1);
-if(x1!=x2 ) Console.Write($"Точка пересечения: ({x}; {y})");
+/*  
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+if (a+b>c && a+c>b &&  b+c>a) 
+Console.WriteLine("ДА");
 else
-Console.Write(" не пересекаются ");
+Console.WriteLine("нет");*/
+
+/*int n = int.Parse(Console.ReadLine());
+int first = 0;
+int second = 1;
+Console.Write(first+ " " + second + " ");
+for (int i = 2; i<n; i++){
+    int next = first + second;
+    Console.Write(next + " ");
+    first = second;
+    second = next;
+    }*/
+
+/* int[,] array = new int[100, 100];
+ int n = array.GetLength(0);
+ void Print()
+ {
+     for (int i = 0; i < array.GetLength(0); i++)
+     {
+         for (int j = 0; j < array.GetLength(1); j++){
+             if (i==j || i == n - 1- j || i == n/2 || j==n/2)
+             Console.Write("*");
+             else 
+             Console.Write(".");
+         }
+         Console.WriteLine();
+     }
+ }
+ Print();*/
+
+//ДОМАШНЕЕ ЗАДАНИЕ СЕМИНАР 6 Ввести Н чисел, посчитать сколько >0
+
+/* int N = int.Parse(Console.ReadLine());
+ int[] array = new int[N];
+ int count = 0;
+ void vvod(){
+     for (int i = 0; i<array.Length; i++){
+     array[i] = int.Parse(Console.ReadLine());
+     if (array[i]>0)
+     count = count+1;
+     }
+ } 
+ vvod();
+ Console.WriteLine(count);*/
+
+// Задача 2, найти точку пересечения двух прямых 
+
+/*void peres(double x1, double y1, double x2, double y2)
+{
+    double x = (y2 - y1) / (x1 - x2);
+    double y = (x2 * y1 - x1 * y2) / (x2 - x1);
+    if (x1 != x2) Console.Write($"Точка пересечения: ({x}; {y})");
+    else
+        Console.Write(" не пересекаются ");
 }
 
 Console.WriteLine("x1: ");
@@ -541,12 +544,93 @@ int x2 = int.Parse(Console.ReadLine());
 Console.WriteLine("y2: ");
 int y2 = int.Parse(Console.ReadLine());
 
-peres(x1,y1,x2,y2);
+peres(x1, y1, x2, y2);*/
+/*void FillList(List<List<double>> MyList)
+{
+    for (int i = 0; i < 5; i++)
+    {
+        MyList.Add(new List<double>());
+        for (int j = 0; j < 5; j++)
+            MyList[i].Add(Math.Round(new Random().NextDouble() * 5));
+    }
+
+
+}
+void PrintList(List<List<double>> MyList)
+{
+    for (int i = 0; i < MyList.Count; i++)
+    {
+        for (int j = 0; j < MyList[i].Count; j++)
+            Console.Write(MyList[i][j] + " ");
+        Console.WriteLine();
+    }
+}
+double Zapolnenie(List<List<double>> MyList)
+{
+    double sum = 0;
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+            if (i == j)
+                sum = sum + MyList[i][j];
+
+
+    }
+    return sum;
+    Console.WriteLine();
+}
+void swap(List<List<double>> MyList, int j1, int j2)
+{
+    double temp = 0;
+    for (int i = 0; i < MyList.Count; i++)
+    {
+        for (int j = 0; j < MyList[i].Count; j++)
+            temp = MyList[i][j1];
+        MyList[i][j1] = MyList[i][j2];
+        MyList[i][j2] = temp; 
+    }
+
+}
+
+List<List<double>> numbers = new List<List<double>>();
+FillList(numbers);
+PrintList(numbers);
+ Console.WriteLine();
+Zapolnenie(numbers);
+swap(numbers, 1, 3);
+//PrintList(numbers);
+//Console.WriteLine(Zapolnenie(numbers));
+PrintList(numbers);*/
+
+// ДОМАШНЕЕ ЗАДАНИЕ, СЕМИНАР 7, ЧАСТЬ 1
+// ЗАДАНИЕ 1 ИЗ ЛЕКЦИИ, взял из лекции, добавил 2 точки после запятой
+void FillList(List<List<double>> MyList)
+{
+    for (int i = 0; i < 5; i++)
+    {
+        MyList.Add(new List<double>());
+        for (int j = 0; j < 5; j++)
+            MyList[i].Add(Math.Round(new Random().NextDouble() * 5,2));
+    }
+}
+void PrintList(List<List<double>> MyList)
+{
+    for (int i = 0; i < MyList.Count; i++)
+    {
+        for (int j = 0; j < MyList[i].Count; j++)
+            Console.Write(MyList[i][j] + " ");
+        Console.WriteLine();
+    }
+}
+List<List<double>> numbers = new List<List<double>>();
+FillList(numbers);
+PrintList(numbers);
 
 
 
 
-   
 
-    
+
+
+
 

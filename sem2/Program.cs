@@ -629,7 +629,7 @@ List<List<double>> numbers = new List<List<double>>();
 //ЗАДАЧА 2, ВВЕСТИ ЧИСЛОю НАЙТИ ЕСТТ ЛИ ТАКОЙ ЭЛЕМЕНТ, 
 //СМОГ РЕШИТЬ ТОЛЬКО ТАК ,ЧЕРЕЗ ПРЕОБРАЗОВАНИЕ В СТРОКУ И ВЫТАСКИВАТЬ ОТ ТУДА НЕ ВЫШЛО 
 
-double swap(List<List<double>> MyList, int j1, int j2)
+/*double swap(List<List<double>> MyList, int j1, int j2)
 {
     double temp1 = 0;
     for (int i = 0; i < MyList.Count; i++)
@@ -652,9 +652,10 @@ PrintList(numbers);
 int j1 = int.Parse(Console.ReadLine());
 int j2 = int.Parse(Console.ReadLine());
 swap(numbers, j1, j2);
-Console.WriteLine(swap(numbers,j1,j2));
+Console.WriteLine(swap(numbers,j1,j2));*/
 
-
+//ЗАДАЧА 3
+не смог 
 
 
 

@@ -875,7 +875,7 @@ OutPut(matrix);*/
 //Задача 4 трехмерный массив из неповторяющихся 2х значных числе
 
 
-void WriteArray (int[,,] array3D)
+/*void WriteArray (int[,,] array3D)
 {
   for (int i = 0; i < array3D.GetLength(0); i++)
   {
@@ -929,7 +929,46 @@ void CreateArray(int[,,] array3D)
 }
 int[,,] array3D = new int[2, 2, 2];
 CreateArray(array3D);
-WriteArray(array3D);
+WriteArray(array3D);*/
+
+//Задача 4 заполнить спирально массив 4*4
+
+int temp = 1;
+int i = 0;
+int j = 0;
+int[,] spiral = new int[4,4];
+
+while (temp <= spiral.GetLength(0) * spiral.GetLength(1))
+{
+  spiral[i, j] = temp;
+  temp++;
+  if (i <= j + 1 && i + j < spiral.GetLength(1) - 1)
+    j++;
+  else if (i < j && i + j >= spiral.GetLength(0) - 1)
+    i++;
+  else if (i >= j && i + j > spiral.GetLength(1) - 1)
+    j--;
+  else
+    i--;
+}
+void WriteArray (int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      if (array[i,j] / 10 <= 0)
+      Console.Write($" {array[i,j]} ");
+
+      else Console.Write($"{array[i,j]} ");
+    }
+    Console.WriteLine();
+  }
+}
+
+WriteArray(spiral);
+
+
 
 
 

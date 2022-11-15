@@ -718,7 +718,7 @@ OutPut(ReverseArr);*/
 // Домашнее задание 8,2
 //Задание , отсартировать строки по убыванию.
 
-void FillMass(int[,] arr)
+/*void FillMass(int[,] arr)
 {
     for (int i = 0; i < 5; i++)
         for (int j = 0; j < 5; j++)
@@ -765,6 +765,53 @@ OutPut(array);
 int[,] NewArr = new int[5, 5];
 NewArr = swap(array);
 OutPut(NewArr);
+*/
+
+void FillMass(int[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+        for (int j = 0; j < arr.GetLength(1); j++)
+            arr[i, j] = new Random().Next(1, 9);
+
+}
+void OutPut(int[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            Console.Write(arr[i, j] + "  ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+void Main(int[,] arr)
+        {
+            int sum = int.MaxValue;
+            int index = 0;
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                int temp = 0;
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    temp += arr[i, j];
+                }
+                if (temp < sum)
+                {
+                    sum = temp;
+                    index = i;
+                }
+            }
+            Console.WriteLine("Строка: "+index+" Сумма - "+sum);
+            Console.WriteLine();
+            
+        }
+int[,] array = new int[7, 5];
+FillMass(array);
+OutPut(array);
+Main(array);
 
 
 

@@ -655,9 +655,116 @@ swap(numbers, j1, j2);
 Console.WriteLine(swap(numbers,j1,j2));*/
 
 //ЗАДАЧА 3
-не смог 
+//не смог 
+//СЕМИНАР 8
+// заменить первую строку на последнюю
+/*void FillMass(int[,] arr)
+{
+    for (int i = 0; i < 5; i++)
+        for (int j = 0; j < 5; j++)
+            arr[i, j] = new Random().Next(1, 9);
+
+}
+void OutPut(int[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            Console.Write(arr[i, j] + "  ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+int[,] swap(int[,] arr)
+{
+    int LastIndex = arr.GetLength(0) - 1;
+    for (int j = 0; j < arr.GetLength(1); j++)
+    {
+        int temp = arr[0, j];
+        arr[0, j] = arr[LastIndex, j];
+        arr[LastIndex, j] = temp;
+
+    }
+    return arr;
+}
+// двумерный массив меняем строки на столбцы
+int[,] FullSwap(int[,] arr){
+int[,] rArr = new int[arr.GetLength(1), arr.GetLength(0)];
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            rArr[j, i] = arr[i, j];
 
 
+        }
+
+    }
+    return rArr;
+}
+
+int[,] array = new int[5, 5];
+FillMass(array);
+//OutPut(array);
+int[,] NewArr = new int[5, 5];
+NewArr = swap(array);
+OutPut(NewArr);
+int[,] ReverseArr = new int[5, 5];
+ReverseArr = FullSwap(NewArr);
+OutPut(ReverseArr);*/
+
+// Домашнее задание 8,2
+//Задание , отсартировать строки по убыванию.
+
+void FillMass(int[,] arr)
+{
+    for (int i = 0; i < 5; i++)
+        for (int j = 0; j < 5; j++)
+            arr[i, j] = new Random().Next(1, 9);
+
+}
+void OutPut(int[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            Console.Write(arr[i, j] + "  ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+int[,] swap(int[,] arr)
+{
+    int s = -1;
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            for (int k = 0; k < arr.GetLength(1)-1 ; k++)
+            {
+                if (arr[i, k]*s > arr[i,k+1]*s)
+                {
+                    int temp = arr[i, k];
+                    arr[i, k] = arr[i, k+1];
+                    arr[i, k+1] = temp;
+                }
+            }
+        }
+    }
+    return arr;
+}
+
+int[,] array = new int[5, 5];
+FillMass(array);
+OutPut(array);
+int[,] NewArr = new int[5, 5];
+NewArr = swap(array);
+OutPut(NewArr);
 
 
 

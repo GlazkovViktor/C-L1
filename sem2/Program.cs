@@ -767,7 +767,7 @@ NewArr = swap(array);
 OutPut(NewArr);
 */
 
-void FillMass(int[,] arr)
+/*void FillMass(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
         for (int j = 0; j < arr.GetLength(1); j++)
@@ -811,7 +811,67 @@ void Main(int[,] arr)
 int[,] array = new int[7, 5];
 FillMass(array);
 OutPut(array);
-Main(array);
+Main(array);*/
+
+// Задача 3 произведение матриц 
+void FillMass(int[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+        for (int j = 0; j < arr.GetLength(1); j++)
+            arr[i, j] = new Random().Next(1, 9);
+
+}
+void OutPut(int[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            Console.Write(arr[i, j] + "  ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+static int[,] MatrixMultiplication(int[,] arr, int[,] arr1)
+{
+    if (arr.GetLength(0) != arr1.GetLength(1))
+    {
+        throw new Exception("Умножение не возможно! Количество столбцов первой матрицы не равно количеству строк второй матрицы.");
+    }
+
+    var ResArr
+     = new int[arr.GetLength(1), arr1.GetLength(0)];
+
+    for (var i = 0; i < arr.GetLength(1); i++)
+    {
+        for (var j = 0; j < arr1.GetLength(0); j++)
+        {
+            ResArr
+            [i, j] = 0;
+
+            for (var k = 0; k < arr.GetLength(0); k++)
+            {
+                ResArr
+                [i, j] += arr[i, k] * arr1[k, j];
+            }
+        }
+    }
+
+    return ResArr
+    ;
+}
+int[,] array = new int[5, 5];
+int[,] array1 = new int[5, 5];
+FillMass(array);
+FillMass(array1);
+OutPut(array);
+OutPut(array1);
+int[,] matrix = new int[5,5];
+matrix = MatrixMultiplication(array,array1);
+OutPut(matrix);
+
 
 
 

@@ -1036,7 +1036,7 @@ Console.WriteLine(FindDictionary(kol));*/
 // Домашнеезадание закл семинар
 // зад 1. от A lj N
 
-string FillNumbers(int N, int A)
+/*string FillNumbers(int N, int A)
 {
     if (N == A) return (A).ToString();
     else
@@ -1052,6 +1052,24 @@ string FillNumbers1(int N)
         return ( N+ " " + FillNumbers1(N-1));
         
 }
-Console.WriteLine(FillNumbers1(5));
+Console.WriteLine(FillNumbers1(5));*/
+
+//Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+
+int CalculateSumm(int m, int n)
+		{
+			int start = m;
+			int end = n;
+			if(m > n)
+			{
+				start = n;
+				end = m;
+			}
+			return (end + start)*(end - start + 1)/2; 
+		}
+		
+		Console.WriteLine(CalculateSumm(1, 15));
+	
+
 
 

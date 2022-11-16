@@ -1056,7 +1056,7 @@ Console.WriteLine(FillNumbers1(5));*/
 
 //Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 
-int CalculateSumm(int m, int n)
+/*int CalculateSumm(int m, int n)
 		{
 			int start = m;
 			int end = n;
@@ -1068,8 +1068,38 @@ int CalculateSumm(int m, int n)
 			return (end + start)*(end - start + 1)/2; 
 		}
 		
-		Console.WriteLine(CalculateSumm(1, 15));
-	
+		Console.WriteLine(CalculateSumm(1, 15));*/
+
+        // задача 3
+
+        int vvod(string input)
+{
+Console.Write(input);
+int output = Convert.ToInt32(Console.ReadLine());
+return output;
+}
+int Akkerman(int m, int n)
+{
+if (m == 0)
+{
+return n + 1;
+}
+else if (n == 0 && m > 0)
+{
+return Akkerman(m - 1, 1);
+}
+else
+{
+return Akkerman(m - 1, Akkerman(m, n - 1));
+}
+}
+
+int m = vvod("Ввод m: ");
+int n = vvod("Ввод n: ");
+int akkermanFunction = Akkerman(m, n);
+Console.Write($"m = {m}, n = {n} - > A(m,n) = {akkermanFunction} ");
+    
+  
 
 
 

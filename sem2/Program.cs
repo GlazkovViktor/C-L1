@@ -933,7 +933,7 @@ WriteArray(array3D);*/
 
 //Задача 4 заполнить спирально массив 4*4
 
-int temp = 1;
+/* int temp = 1;
 int i = 0;
 int j = 0;
 int[,] spiral = new int[4,4];
@@ -966,10 +966,92 @@ void WriteArray (int[,] array)
   }
 }
 
-WriteArray(spiral);
+WriteArray(spiral);*/
+
+//ЗАКЛЮЧИТЕЛЬНЫЙ СЕМИНАР
+
+// вывод всех натуральныъ чисел при помощи рекрсии. от 1 до Н
+/*int k = 0;
+string FillNumbers(int N)
+{
+    if (N == 1) return (k+1).ToString();
+    else
+        k++;
+        return (k + " " + FillNumbers(N-1));
+        
+}
+Console.WriteLine(FillNumbers(15));*/
+
+// задача 2 от м до н
+/*
+string FillNumbers(int N, int A)
+{
+    if (N == A) return (N).ToString();
+    else
+        return (N + " " + FillNumbers(N+1,A));
+        
+}
+Console.WriteLine(FillNumbers(5,111));*/
+
+// выводить сумму числе числа
+
+/*int Summa(int n)
+{
+    if (n % 10 == 0) return 0;
+    else
+        return (n % 10 + Summa(n / 10));
+}
+Console.WriteLine(Summa(24546454));*/
+
+/*int Summa(int A, int B)
+{
+    if (B == 0) return 1;
+    if (B == 1) return A;
+    else
+        B = B - 1;
+    return (A * Summa(A, B));
+}
+Console.WriteLine(Summa(5,3));*/
+
+/*string FindDictionary(int n)
+{
+    Dictionary<string, string> Dict = new Dictionary<string, string>();
+    for (int i = 0; i < n; i++)
+    {   
+        Console.WriteLine("Введите пары слов");
+        string[] names = Console.ReadLine().Split();
+        Dict.Add(names[0],names[1]);
+        Dict.Add(names[1],names[0]);
+    }
+    Console.WriteLine("Введите name");
+    string chooseName = Console.ReadLine();
+    return Dict[chooseName];
+}
+
+Console.WriteLine("Введите число слов");
+int kol = int.Parse(Console.ReadLine());
+Console.WriteLine(FindDictionary(kol));*/
 
 
+// Домашнеезадание закл семинар
+// зад 1. от A lj N
 
-
+string FillNumbers(int N, int A)
+{
+    if (N == A) return (A).ToString();
+    else
+        return ( A+ " " + FillNumbers(N,A-1));
+        
+}
+Console.WriteLine(FillNumbers(5,10));
+//от  N до 1
+string FillNumbers1(int N)
+{
+    if (N == 1) return (1).ToString();
+    else
+        return ( N+ " " + FillNumbers1(N-1));
+        
+}
+Console.WriteLine(FillNumbers1(5));
 
 
